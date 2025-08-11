@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- SEO -->
+  <title>index.file</title>
+  <meta name="description" content="Hello Wolrd" />
+  <meta name="keywords" content="Hello Wolrd" />
+  <link rel="canonical" href="https://www.example.com/" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Open Graph / Social -->
+  <meta property="og:title" content="Hello World" />
+  <meta property="og:description" content="my html assignment" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.example.com/" />
+  <meta property="og:locale" content="en_US" />
+
+  <!-- Twitter card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Hello World" />
+  <meta name="twitter:description" content="Hello World" />
+
+  <!-- Structured data (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Example Site",
+    "url": "https://www.example.com/"
+  }
+  </script>
+
+  <style>
+    /* Minimal, high-contrast styles to keep the example self-contained */
+    :root{font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;line-height:1.45;color:#111;background:#fff}
+    body{margin:0;padding:0}
+    a{color:#0366d6}
+    header,main,footer,nav,section,article,aside{display:block}
+    .container{max-width:1000px;margin:0 auto;padding:1rem}
+    .site-title{margin:0;padding:1rem 0}
+    nav ul{list-style:none;padding:0;margin:0;display:flex;gap:0.5rem}
+    nav a{display:inline-block;padding:0.4rem 0.6rem;text-decoration:none}
+    .hero{padding:1.25rem 0}
+    .grid{display:grid;grid-template-columns:1fr 320px;gap:1rem}
+    .card{padding:1rem;border-radius:8px;background:#f7f7f7}
+    footer{padding:1rem 0;border-top:1px solid #e6e6e6;margin-top:2rem}
+    /* Skip link */
+    .skip-link{position:absolute;left:-999px;top:auto;width:1px;height:1px;overflow:hidden}
+    .skip-link:focus{position:static;width:auto;height:auto;left:auto;padding:0.5rem;background:#000;color:#fff;z-index:1000}
+    @media (max-width:880px){.grid{grid-template-columns:1fr}}
+  </style>
+
+  <script>
+    // Ensure the focused skip link target receives focus in all browsers
+    document.addEventListener('DOMContentLoaded', function(){
+      var skip = document.querySelector('.skip-link');
+      if(skip){
+        skip.addEventListener('click', function(e){
+          var target = document.getElementById(skip.hash && skip.hash.slice(1));
+          if(target){ target.setAttribute('tabindex','-1'); target.focus(); }
+        });
+      }
+    });
+  </script>
+</head>
+<body>
+  <!-- Skip to main content for keyboard users -->
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header role="banner" class="site-header" aria-label="Site header">
+    <div class="container">
+      <div style="display:flex;align-items:center;justify-content:space-between">
+        <div>
+          <h1 class="site-title">Example Site</h1>
+          <p class="visually-hidden" style="margin:0"> Hello world</p>
+        </div>
+        <nav role="navigation" aria-label="Primary Navigation">
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content" role="main" class="container" aria-labelledby="main-heading">
+    <article aria-labelledby="main-heading">
+      <header class="hero">
+        <h2 id="main-heading">My html Assignment</h2>
+        <p> Hello Wolrd</p>.</p>
+      </header>
